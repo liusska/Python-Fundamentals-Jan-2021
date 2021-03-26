@@ -1,0 +1,15 @@
+num = int(input())
+
+
+def is_perfect(number):
+    total = 0
+    for i in range(1, number):
+        if number % i == 0:
+            total += i
+    if total == number:
+        print("We have a perfect number!")
+    else:
+        print("It's not so perfect.")
+
+
+is_perfect(num)
